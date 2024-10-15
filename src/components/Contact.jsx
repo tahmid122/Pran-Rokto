@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="relative w-[280px] h-[300px]  sm:h-[300px] sm:w-[280px]  bg-white border-4 border-black rounded-lg">
           <div className="absolute w-[280px] h-[300px]  sm:bottom-10 sm:right-10 sm:h-[300px] sm:w-[280px]  bg-blue-500 border-4 border-black rounded-lg -rotate-6">
             <img
-              src="public/profile-pic.png"
+              src="/profile-pic.png"
               alt="AdminImage"
               className="h-full w-full object-cover"
             />

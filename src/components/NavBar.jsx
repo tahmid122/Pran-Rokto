@@ -14,7 +14,7 @@ const NavBar = () => {
         <Link to={"/"}>
           <div className="flex items-center gap-4">
             <img
-              src="/public/favicon.png"
+              src="/favicon.png"
               alt="PranRokto"
               className="h-[50px] w-auto"
             />
