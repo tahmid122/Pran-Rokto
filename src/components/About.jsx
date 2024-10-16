@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="container mx-auto py-8">
       <div className="px-3 lg:w-[50%] mx-auto">
-        <h1 className="text-center mb-5 bg-[#ED0404] text-white font-bold h-[45px] flex items-center justify-center rounded-md">
+        <h1 className="text-center mb-5 bg-[#ED0404] text-white font-bold min-h-[45px] flex items-center justify-center rounded-md p-1">
           প্রাণরক্ত.কম স্বেচ্ছায় রক্তদাতাদের একটি ওয়েবসাইট
         </h1>
         <div className="flex flex-col gap-5 text-sm text-justify">

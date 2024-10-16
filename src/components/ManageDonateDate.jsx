@@ -26,6 +26,8 @@ const ManageDonateDate = () => {
 
       if (res.status === 401) {
         // Check if the token is invalid or unauthorized
+        localStorage.removeItem("mobile");
+        localStorage.removeItem("token");
         navigate("/login");
       }
     } catch (error) {
@@ -105,11 +107,11 @@ const ManageDonateDate = () => {
             </h1>
             <form onSubmit={handleSubmit} action="" className="space-y-3">
               <div className="w-full flex flex-col items-center justify-center gap-3 mt-3">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-col">
                   <h2 className="font-bold">সর্বশেষ রক্তদানের তারিখ: {date}</h2>
-                  <span className="flex items-center gap-1">
+                  <div className="flex items-center gap-1">
                     <span className="font-bold">({dayDifference}</span> দিন আগে)
-                  </span>
+                  </div>
                 </div>
                 <input
                   type="date"

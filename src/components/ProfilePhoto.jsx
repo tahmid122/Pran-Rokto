@@ -61,7 +61,7 @@ const ProfilePhoto = () => {
         <form onSubmit={handleSubmit} className="w-[100%] lg:w-[80%] mx-auto">
           <div className=" w-[100%] min-h-[300px] py-2 px-5 flex flex-col justify-center lg:items-center">
             {donorDetails ? (
-              <div className="flex items-center justify-center mb-5 gap-5">
+              <div className="flex items-center justify-center mb-5 gap-5 flex-col sm:flex-row">
                 <img
                   src={
                     donorDetails.image

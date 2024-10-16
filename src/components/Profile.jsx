@@ -78,6 +78,8 @@ const Profile = () => {
 
       if (res.status === 401) {
         // Check if the token is invalid or unauthorized
+        localStorage.removeItem("mobile");
+        localStorage.removeItem("token");
         navigate("/login");
       }
     } catch (error) {
