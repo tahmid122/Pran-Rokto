@@ -3,6 +3,7 @@ import ProfileNav from "./ProfileNav";
 import { useNavigate, useParams } from "react-router";
 import { useLoading } from "./LoadingContexts";
 import { RiAlertLine } from "react-icons/ri";
+const apiUrl = import.meta.env.VITE_API_URL;
 const ChangePassword = () => {
   const [errors, setErrors] = useState("");
   const [showValues, setShowValues] = useState("");
@@ -79,19 +80,16 @@ const ChangePassword = () => {
     if (Object.keys(validationErrors).length == 0) {
       try {
         setIsLoading(true);
-        const res = await fetch(
-          `http://localhost:3000/change-password/${number}`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              oldPassword,
-              newPassword,
-            }),
-          }
-        );
+        const res = await fetch(`${apiUrl}/change-password/${number}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            oldPassword,
+            newPassword,
+          }),
+        });
         const data = await res.json();
         if (data.msg === "Successfully Changed the password") {
           alert("পাসওয়ার্ড সফল্ভাবে পরিবর্তন হয়েছে");

@@ -294,6 +294,7 @@ const Registration = () => {
     control: (provided, state) => ({
       ...provided,
       height: "40px",
+      width: "100%",
       boxShadow: "none",
       borderRadius: "0.375rem", // Adjust the border radius as needed
       fontSize: "14px",
@@ -364,7 +365,7 @@ const Registration = () => {
           <form action="" className="w-[100%]" onSubmit={handleSubmit}>
             <div className=" w-[100%] min-h-[300px] py-2 px-5 flex flex-col justify-center">
               {showValues && donorRegistrationDetails.gender === "পুরুষ" ? (
-                <div className="w-full text-sm h-[50px] pl-2 flex items-center my-3 border-l-4 border-maincolor  bg-red-200">
+                <div className="w-full text-sm min-h-[50px] p-2 flex items-center my-3 border-l-4 border-maincolor  bg-red-200">
                   <p>
                     {showValues}
                     <Link
@@ -606,7 +607,7 @@ const Registration = () => {
                   name="lastDonationDate"
                   ref={lastDonationDateRef}
                   max={today}
-                  className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm"
+                  className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm w-full"
                   placeholder="সর্বশেষ রক্ত দানের তারিখ"
                   onChange={handledonorRegistrationDetails}
                 />
@@ -753,7 +754,7 @@ const Registration = () => {
                   name="dob"
                   ref={dobRef}
                   max={"2006-12-31"}
-                  className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm"
+                  className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm w-full"
                   placeholder="জন্ম তারিখ"
                   onChange={handledonorRegistrationDetails}
                 />

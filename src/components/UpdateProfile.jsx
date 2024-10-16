@@ -228,6 +228,7 @@ const UpdateProfile = () => {
     control: (provided, state) => ({
       ...provided,
       height: "40px",
+      width: "100%",
       boxShadow: "none",
       borderRadius: "0.375rem", // Adjust the border radius as needed
       fontSize: "14px",
@@ -540,7 +541,7 @@ const UpdateProfile = () => {
                   <select
                     name="bloodGroup"
                     type="text"
-                    className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm"
+                    className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm w-full"
                     onChange={handledonorRegistrationDetails}
                     defaultValue={donorRegistrationDetails.bloodGroup}
                   >
@@ -575,7 +576,7 @@ const UpdateProfile = () => {
                   <input
                     type="date"
                     name="lastDonationDate"
-                    className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm"
+                    className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm w-full"
                     placeholder="সর্বশেষ রক্ত দানের তারিখ"
                     onChange={handledonorRegistrationDetails}
                     defaultValue={donorRegistrationDetails.lastDonationDate}
@@ -723,7 +724,7 @@ const UpdateProfile = () => {
                   <input
                     type="date"
                     name="dob"
-                    className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm"
+                    className="border border-slate-300 rounded-md h-[40px] py-2 px-2 focus:border-[#ED0404] outline-none text-sm w-full"
                     placeholder="জন্ম তারিখ"
                     onChange={handledonorRegistrationDetails}
                     defaultValue={donorRegistrationDetails.dob}

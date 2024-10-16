@@ -67,15 +67,15 @@ const ProfilePhoto = () => {
                     donorDetails.image
                       ? donorDetails.image
                       : donorDetails.gender == "পুরুষ"
-                      ? "/public/men.jpg"
-                      : "/public/women.jpg"
+                      ? "/men.jpg"
+                      : "/women.jpg"
                   }
                   alt={
                     donorDetails.image
                       ? donorDetails.image
                       : donorDetails.gender == "পুরুষ"
-                      ? "/public/men.jpg"
-                      : "/public/women.jpg"
+                      ? "/men.jpg"
+                      : "/women.jpg"
                   }
                   className="h-[150px] w-[150px] rounded-full object-cover lg:w-[200px] lg:h-[200px]"
                 />
