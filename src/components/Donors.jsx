@@ -132,8 +132,8 @@ const Donors = () => {
                       image
                         ? image
                         : gender === "পুরুষ"
-                        ? "/public/men.jpg"
-                        : "/public/women.jpg"
+                        ? "/men.jpg"
+                        : "/women.jpg"
                     }
                     alt={name}
                     className="w-[200px] h-[150px] object-cover rounded-md"
