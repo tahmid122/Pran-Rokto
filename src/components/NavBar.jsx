@@ -80,6 +80,21 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
+              to="/chat-box"
+              className={({ isActive }) =>
+                isActive
+                  ? "bg-[#ED0404] text-white p-2 rounded-md transition-all duration-500"
+                  : "hover:bg-[#ED0404] p-2 rounded-md hover:text-white transition-all duration-500"
+              }
+              onClick={() => {
+                setIsTrue(false);
+              }}
+            >
+              কমিউনিটি
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/contact"
               className={({ isActive }) =>
                 isActive

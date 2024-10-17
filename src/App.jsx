@@ -22,6 +22,7 @@ import Preloader from "./components/Preloader";
 import WomenProtection from "./components/WomenProtection";
 import ProfilePhoto from "./components/ProfilePhoto";
 import ScrollToTop from "./components/ScrollToTop";
+import ChatBox from "./components/ChatBox";
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function MainApp() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<Error404 />} />
+          <Route path="*" element={<Error404 />} />
+          <Route path="/chat-box" element={<ChatBox />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/forget-password" element={<ForgetPassword />} />

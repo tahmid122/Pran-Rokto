@@ -510,10 +510,7 @@ const UpdateProfile = () => {
                   ""
                 )}
                 <div className="flex flex-col mb-5">
-                  <label
-                    htmlFor="ইমেইল"
-                    className="text-md mb-2 after:content-['*'] after:ml-1 after:text-[#ED0404] after:font-bold"
-                  >
+                  <label htmlFor="ইমেইল" className="text-md mb-2">
                     ইমেইল (যদি থাকে)
                   </label>
                   <input

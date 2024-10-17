@@ -11,3 +11,9 @@
   border-color: #3182ce transparent transparent transparent;
   animation: spin 1s linear infinite;
 }
+textarea::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
+.message-box::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
