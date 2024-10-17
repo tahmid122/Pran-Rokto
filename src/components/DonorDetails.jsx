@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useLoading } from "./LoadingContexts";
 import { Link } from "react-router-dom";
 const apiUrl = import.meta.env.VITE_API_URL;
 const DonorDetails = () => {
   const { setIsLoading } = useLoading();
+  const navigate = useNavigate();
   const { number } = useParams();
   const [districtName, setDistrictName] = useState("");
   const [donorDetails, setDonorDetails] = useState();
@@ -36,6 +37,9 @@ const DonorDetails = () => {
         data.dob = formattedLastDonationDate;
       }
       setDonorDetails(data);
+      if (data.msg) {
+        navigate("/donors");
+      }
     } catch (error) {
       console.log(error);
     } finally {
