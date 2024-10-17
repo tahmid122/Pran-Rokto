@@ -178,7 +178,7 @@ const ChatBox = () => {
             ""
           )}
           {!number ? (
-            <span className="absolute  -top-3 w-full text-center flex items-center justify-center text-maincolor">
+            <span className="absolute  top-3 w-full text-center flex items-center justify-center text-maincolor">
               <RiAlertLine className="text-sm" />
               <span className="text-sm">
                 {"ম্যাসেজ করতে হলে অবশ্যই লগইন থাকতে হবে"}
