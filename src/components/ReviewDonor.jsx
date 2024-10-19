@@ -24,7 +24,7 @@ const ReviewDonor = () => {
   //verify user
   const getVerified = async () => {
     try {
-      const res = await fetch(`${apiUrl}/admin`, {
+      const res = await fetch(`${apiUrl}/profile`, {
         headers: {
           Authorization: token,
         },
