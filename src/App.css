@@ -17,3 +17,11 @@ textarea::-webkit-scrollbar {
 .message-box::-webkit-scrollbar {
   display: none; /* Hide scrollbar in WebKit browsers */
 }
+.item::-webkit-scrollbar {
+  display: none;
+}
+
+/* .carousel-container {
+  display: flex;
+  justify-content: center;
+} */

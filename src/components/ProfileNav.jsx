@@ -5,6 +5,7 @@ import { FaLock } from "react-icons/fa";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { GrUpdate } from "react-icons/gr";
 import { NavLink, useParams } from "react-router-dom";
+import { FaCommentAlt } from "react-icons/fa";
 const ProfileNav = () => {
   const { number } = useParams();
   return (
@@ -58,6 +59,19 @@ const ProfileNav = () => {
           <li className="flex gap-2 items-center">
             <FaCalendarAlt />
             <span>ম্যানেজ ডোনেট ডেট</span>
+          </li>
+        </NavLink>
+        <NavLink
+          to={`/profile/review/${number}`}
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#ED0404] text-white p-2 rounded-md transition-all duration-500"
+              : "hover:bg-[#ED0404] p-2 rounded-md hover:text-white transition-all duration-500 my-[1px]"
+          }
+        >
+          <li className="flex gap-2 items-center">
+            <FaCommentAlt />
+            <span>মতামত</span>
           </li>
         </NavLink>
         <NavLink

@@ -23,6 +23,11 @@ import WomenProtection from "./components/WomenProtection";
 import ProfilePhoto from "./components/ProfilePhoto";
 import ScrollToTop from "./components/ScrollToTop";
 import ChatBox from "./components/ChatBox";
+import ReviewDonor from "./components/ReviewDonor";
+import AdminPanel from "./components/AdminPanel";
+import AdminReview from "./components/AdminReview";
+import AdminChangePassDonor from "./components/AdminChangePassDonor";
+import AdminLogin from "./components/AdminLogin";
 
 function App() {
   return (
@@ -46,10 +51,13 @@ function MainApp() {
           <Route path="/*" element={<Error404 />} />
           <Route path="*" element={<Error404 />} />
           <Route path="/chat-box" element={<ChatBox />} />
+          <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/changed-password" element={<AdminChangePassDonor />} />
+          <Route path="/admin-review" element={<AdminReview />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/forget-password" element={<ForgetPassword />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact-women-donor" element={<WomenProtection />} />
           <Route path="/registration" element={<Registration />} />
@@ -57,6 +65,7 @@ function MainApp() {
           <Route path="/donors/:number" element={<DonorDetails />} />
           <Route path="/profile-photo/:number" element={<ProfilePhoto />} />
           <Route path="/profile/:number" element={<Profile />} />
+          <Route path="/profile/review/:number" element={<ReviewDonor />} />
           <Route
             path="/profile/manage-donate-date/:number"
             element={<ManageDonateDate />}
