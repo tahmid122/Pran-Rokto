@@ -24,7 +24,7 @@ const AdminChangePassDonor = () => {
   //verify user
   const getVerified = async () => {
     try {
-      const res = await fetch(`${apiUrl}/profile`, {
+      const res = await fetch(`${apiUrl}/admin`, {
         headers: {
           Authorization: token,
         },
