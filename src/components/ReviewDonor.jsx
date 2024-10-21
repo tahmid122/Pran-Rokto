@@ -122,11 +122,30 @@ const ReviewDonor = () => {
       setIsLoading(false);
     }
   };
+  const getReview2 = async () => {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${apiUrl}/pre-review/${number}`, {
+        method: "GET",
+      });
+      const data = await res.json();
+      if (data.mobile || data.womenNumber) {
+        setIsTrue(true);
+      }
+    } catch (error) {
+      console.log(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
   useEffect(() => {
     getVerified();
   }, []);
   useEffect(() => {
     getDonorDetails();
+  }, []);
+  useEffect(() => {
+    getReview2();
   }, []);
   useEffect(() => {
     getReview();
