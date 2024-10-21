@@ -109,7 +109,7 @@ const ReviewDonor = () => {
   const getReview = async () => {
     try {
       setIsLoading(true);
-      const res = await fetch(`${apiUrl}/pre-review/${number}`, {
+      const res = await fetch(`${apiUrl}/main-review/${number}`, {
         method: "GET",
       });
       const data = await res.json();
