@@ -29,7 +29,6 @@ const AdminReview = () => {
       });
       const data = await res.json();
       if (data.msg) {
-        console.log(data.msg);
         window.location.reload();
       }
     } catch (error) {
@@ -61,10 +60,8 @@ const AdminReview = () => {
       const data = await res.json();
 
       if (data.message) {
-        console.log(data.message);
         handleDelete(mobile);
       }
-      window.location.reload();
     } catch (error) {
       console.log(error.message);
     } finally {
