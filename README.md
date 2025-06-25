@@ -36,27 +36,6 @@
 ### 🖥️ Backend
 🔗[**Backend Repository**](https://github.com/tahmid122/pranRokto-API)
 
-| Package                  | Version     |
-|--------------------------|-------------|
-| Node.js                 | ≥18.x       |
-| Express                 | ^4.21.0     |
-| MongoDB (native)        | ^6.9.0      |
-| Mongoose                | ^8.6.3      |
-| Bcrypt.js               | ^2.4.3      |
-| JSON Web Token (JWT)    | ^9.0.2      |
-| Passport                | ^0.7.0      |
-| Passport-JWT            | ^4.0.1      |
-| Multer                  | ^1.4.5-lts.1|
-| Multer-Cloudinary       | ^4.0.0      |
-| Cloudinary              | ^1.41.3     |
-| Dotenv                  | ^16.4.5     |
-| Body-Parser             | ^1.20.3     |
-| CORS                    | ^2.8.5      |
-| Nodemon                 | ^3.1.7      |
-
----
-
-
 ## 🚀 Getting Started
 
 ### 🔹 Frontend
@@ -67,44 +46,6 @@ cd pranrokto
 npm install
 npm run dev
 ```
-
-### 🔹 Backend
-
-```bash
-git clone https://github.com/tahmid122/pranRokto-API.git
-cd pranRokto-API
-npm install
-```
-
-Create a .env file in the root with the following:
-```
-PORT=5000
-MONGO_URL=your_mongodb_url
-SECRET_KEY=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
-```
-Run the backend:
-```
-npm start
-```
-
-## 📡 API Overview
-
-| Method | Endpoint                      | Description               |
-| ------ | ----------------------------- | ------------------------- |
-| POST   | `/donorsData`                 | Register a new donor      |
-| POST   | `/login`                      | Donor login               |
-| POST   | `/admin-login`                | Admin login               |
-| GET    | `/donor/:number`              | Get donor details         |
-| POST   | `/main-review`                | Submit a main review      |
-| GET    | `/main-review`                | Retrieve all main reviews |
-| POST   | `/getSearchResult`            | Search donors             |
-| POST   | `/donor/update/photo/:number` | Upload donor photo        |
-| POST   | `/change-password/:number`    | Change donor password     |
-
-And more routes for reviews, chat, password reset, and profile management.
 
 ## 📝Author
 
