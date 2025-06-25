@@ -105,3 +105,9 @@ npm start
 | POST   | `/change-password/:number`    | Change donor password     |
 
 And more routes for reviews, chat, password reset, and profile management.
+
+## 📝Author
+
+- Name: **Tahmid Alam**
+- GitHub: [@tahmid122](www.github.com/tahmid122)
+- Email: <mdtahmidalam122@gmail.com>
