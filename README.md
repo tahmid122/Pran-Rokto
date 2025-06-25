@@ -8,24 +8,38 @@
 
 ## 🛠️ Tech Stack
 
-### 💻 Frontend
-- React 18
-- Vite
-- Tailwind CSS & DaisyUI
-- React Router DOM
-- React Select
-- React Slick & Slick Carousel
-- React Icons
-- LDRS (Loaders)
+| Package                 | Version    |
+|-------------------------|------------|
+| React                  | ^18.3.1    |
+| Vite                   | ^5.4.1     |
+| React Router DOM       | ^6.26.2    |
+| Tailwind CSS           | ^3.4.11    |
+| DaisyUI                | —          |
+| React Select           | ^5.8.1     |
+| React Slick            | ^0.30.2    |
+| Slick Carousel         | ^1.8.1     |
+| React Icons            | ^5.3.0     |
+| LDRS (Loaders)         | ^1.0.2     |
 
 ### 🖥️ Backend
-- Node.js & Express.js
-- MongoDB & Mongoose
-- Passport JWT Authentication
-- Bcrypt.js for password hashing
-- Multer + Cloudinary for image upload
-- Dotenv for environment variables
-- CORS & Body-Parser
+
+| Package                  | Version     |
+|--------------------------|-------------|
+| Node.js                 | ≥18.x       |
+| Express                 | ^4.21.0     |
+| MongoDB (native)        | ^6.9.0      |
+| Mongoose                | ^8.6.3      |
+| Bcrypt.js               | ^2.4.3      |
+| JSON Web Token (JWT)    | ^9.0.2      |
+| Passport                | ^0.7.0      |
+| Passport-JWT            | ^4.0.1      |
+| Multer                  | ^1.4.5-lts.1|
+| Multer-Cloudinary       | ^4.0.0      |
+| Cloudinary              | ^1.41.3     |
+| Dotenv                  | ^16.4.5     |
+| Body-Parser             | ^1.20.3     |
+| CORS                    | ^2.8.5      |
+| Nodemon                 | ^3.1.7      |
 
 ---
 
