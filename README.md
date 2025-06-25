@@ -6,6 +6,18 @@
 
 ---
 
+## ✨ Features
+
+- 🔍 Search blood donors by blood group, district, and upazilla
+- 🔐 Secure donor and admin authentication (JWT)
+- 🧾 Donor profile creation, update, and password management
+- 🖼️ Image upload and storage via Cloudinary
+- 💬 Public reviews and chatbox functionality
+- 📱 Fully responsive interface
+- 🌐 Hosted on Vercel (frontend) and Render (or any Node server)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Package                 | Version    |
@@ -43,19 +55,6 @@
 
 ---
 
-## ✨ Features
-
-- 🔍 Search blood donors by blood group, district, and upazilla
-- 🔐 Secure donor and admin authentication (JWT)
-- 🧾 Donor profile creation, update, and password management
-- 🖼️ Image upload and storage via Cloudinary
-- 💬 Public reviews and chatbox functionality
-- 📱 Fully responsive interface
-- 🌐 Hosted on Vercel (frontend) and Render (or any Node server)
-
----
-
----
 
 ## 🚀 Getting Started
 
@@ -71,7 +70,8 @@ npm run dev
 ### 🔹 Backend
 
 ```bash
-cd apipranrokto
+git clone https://github.com/tahmid122/pranRokto-API.git
+cd pranRokto-API
 npm install
 ```
 
